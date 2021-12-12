@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import TodoForm from './TodoForm';
-import TodoList from './TodoList';
 import {MdOutlineDelete} from "react-icons/md";
 import {MdEdit} from "react-icons/md";
 
@@ -25,8 +24,8 @@ function Todo({todos, completeTodo, removeTodo, editTodo}) {
 
     return todos.map((todo, index) => (
         <div className={todo.isComplete ? "todo-row-complete" : "todo-row"}>
-            <div className="hiden-clicker" unselectable="on" key={index} key={todo.id} onClick={() => completeTodo(todo.id)}>
-                <MdEdit /* just some place holder : ) */ />
+            <div className="hiden-clicker" unselectable="on" key={index} onClick={() => completeTodo(todo.id)}>
+                <MdEdit /* just a place holder for the hiden clicker: ) */ />
             </div>
             <div className="todo-text">
                 {todo.text}

@@ -19,7 +19,7 @@ function TodoForm(props) {
         e.preventDefault();
 
         props.onSubmit({
-            id: Math.floor(Math.random() * 10000), 
+            id: Date.now(), // make sure the IDs are unique
             text: input
         });
 
