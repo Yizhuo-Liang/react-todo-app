@@ -30,7 +30,7 @@ function TodoForm(props) {
         <form className="todo-form" onSubmit={handleSubmit}>
             <input
                 type="text" 
-                placeholder="what to do..." 
+                placeholder="What to do..." 
                 value = {input}
                 name="text" 
                 className="todo-input"
@@ -42,4 +42,4 @@ function TodoForm(props) {
     )
 }
 
-export default TodoForm
+export default TodoForm;

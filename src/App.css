@@ -1,8 +1,13 @@
+@font-face {
+  font-family: "Ubuntu Medium";
+  src: url("https://yizhuo-liang.github.io/resources/fonts/Ubuntu-Medium.ttf") format("truetype");
+}
+
 * {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: Arial;
+  font-family: "Ubuntu Medium";
 }
 
 body {
@@ -16,7 +21,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 h1 {
@@ -97,7 +102,7 @@ h1 {
 
 .hiden-clicker {
   position: absolute;
-  width: 28%;
+  width: 23%;
   opacity: 0;
 }
 
