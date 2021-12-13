@@ -38,7 +38,6 @@ function Todo({todos, completeTodo, removeTodo, editTodo}) {
                 onClick={() => removeTodo(todo.id)}
                 className="delete-icon"
             />
-            
         </div>
     ))
 }

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Todo from './Todo';
 import TodoForm from './TodoForm';
+import Prompt from './Prompt';
 
 function TodoList() {
 
@@ -49,6 +50,7 @@ function TodoList() {
             <h1> TODAY </h1>
             <TodoForm onSubmit={addTodo} /* display the input box */ />
             <Todo todos={todos} completeTodo={completeTodo} removeTodo={removeTodo} editTodo={editTodo} /* display the todo list */ />
+            <Prompt todos={todos} /* display the conversation box */ />
         </div>
     )
 }
